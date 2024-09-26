@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: rubik;
+            src: url(../Rubik/Rubik-VariableFont_wght.ttf);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: rubik;
+        }
+
+        .cont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates a grid with 3 equal columns */
+            gap: 15px; /* Space between grid items */
+            padding: 15px; /* Padding around the grid */
+        }
+
+        .container {
+            border-radius: 10px;
+            height: 250px; /* Reduced height for smaller cards */
+            width: 100%; /* Full width of the grid column */
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6); /* Slightly smaller shadow */
+            padding: 10px; /* Reduced padding */
+            box-sizing: border-box; /* Includes padding in width/height calculations */
+            background-color: #fff; /* Background color for the card */
+            overflow: hidden; /* Ensures content stays within bounds */
+        }
+
+        img {
+            height: 120px; /* Adjusted image height */
+            width: 100%; /* Makes the image responsive */
+            border-radius: 10px;
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+
+        p {
+            font-size: 18px; /* Adjusted font size */
+            font-weight: 700;
+            line-height: 24px;
+            margin: 10px 0; /* Adjusts top and bottom margins */
+        }
+
+        hr {
+            width: 75%;
+            border: 1px solid rgba(128, 128, 128, 0.27);
+            margin: 10px 0; /* Adds margin to the top and bottom of the hr */
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between price elements */
+        }
+
+        .price {
+            font-size: 16px; /* Adjusted font size */
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        .price-current {
+            color: rgb(102, 116, 204);
+        }
+
+        .price-original {
+            color: rgb(119, 124, 133);
+            text-decoration: line-through;
+        }
+
+        .offer {
+            background-color: #1DD1A1;
+            color: #fff;
+            padding: 4px;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 12px; /* Adjusted font size */
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Certificates of participation</H1>
+    <div class="cont">
+      
+        <div class="container">
+            <img src="./Images/myntra.png" alt="Course Image" />
+            <p>This certificate provided by Myntra is proof of the sheer grit, hard work, & dedication </p>
+            <hr />
+            <a href="https://unstop.com/certificate-preview/3c9533f4-dacf-4648-9397-b543cc07805b?utm_campaign=">
+                 <i class="fas fa-certificate"></i>
+            </a>
+        </div>
+
+        <div class="container">
+            <img src="./Images/flipkart.png" alt="Course Image" />
+            <p>This certificate provided by Flipkart is proof of the sheer grit, hard work, & dedication </p>
+            <hr />
+            <a href="https://unstop.com/certificate-preview/a5e73f88-4af3-4129-8369-22646e0ce63c?utm_campaign=">
+                <i class="fas fa-certificate"></i>
+           </a>
+        </div>
+
+        <div class="container"></div>
+            <img src="./Screenshot (238).png" alt="Course Image" />
+            <p>This certificate provided by internshala  is proof of the sheer grit, hard work, & dedication </p>
+            <hr />
+            <a href="">
+                <i class="fas fa-certificate"></i>
+           </a>
+        </div>
+
+     
+    </div>
+</body>
+
+</html>

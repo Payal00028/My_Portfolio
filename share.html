@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Modal</title>
+
+    <!-- Link Favicon  -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="./share.css" />
+
+    <!-- link JS  -->
+    <script src="./share.js" defer></script>
+  </head>
+  <body>
+    <!-- wrapper -->
+
+    <div class="wrapper">
+      <!-- circles  -->
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="container">
+        <!-- Image -->
+        <div><img src="Images/payal.jpeg" alt="Hero " /></div>
+
+        <!-- Heading -->
+        <div class="userName">
+          <h2>PAYAL MALETHA</h2>
+        </div>
+
+        <!-- designation  -->
+        <div class="designation">
+          <h3>Student at graphic era university</h3>
+        </div>
+
+        <!-- Button Group  -->
+        <div class="btnGroup">
+          <button class="btn btnShare" onclick="openModal()">
+            <i class="fa-solid fa-share"></i>
+            <div>Click to See My  Coding  Profile </div>
+          </button>
+
+          <button class="btn btnFollow">
+            <P> linkedin profile</P>
+            <a href="https://www.linkedin.com/in/prerna-m-96a41b329/">Follow Me</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Component  -->
+    <div class="modal">
+      <div class="modalHeader">
+        <h1><b>Share My  Coding Profile</b></h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+      
+      <div class="iconContainer">
+        <div class="icon-wrapper">
+            <a href="https://leetcode.com/u/prerna2821/" class="icon" id="whatsapp" title="Visit my LeetCode profile">
+                <i class="fas fa-code" style="color: white"></i>
+                <p>Visit my LeetCode Profile</p>
+            </a>
+        </div>
+        
+        <div class="icon-wrapper">
+            <a href="https://www.geeksforgeeks.org/user/infinity1234/" class="icon" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <p>Visit my GeeksforGeeks Profile</p>
+            </a>
+        </div>
+    
+        <div class="icon-wrapper">
+            <a href="https://www.codechef.com/users/quiet_image_11" class="icon" id="codechef">
+                <i class="fa-brands fa-codechef"></i>
+                <p>Visit my CodeChef Profile</p>
+            </a>
+        </div>
+    
+        <div class="icon-wrapper">
+            <a href="https://codeforces.com/profile/limittoinfinity" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <p>Visit My CodeForces Profile</p>
+            </a>
+        </div>
+        
+        <div class="icon-wrapper">
+            <a href="https://www.linkedin.com/in/prerna-m-96a41b329/" class="icon" id="telegram">
+                <i class="fa-brands fa-github"></i>
+                <p>Visit My LinkedIn Profile</p>
+            </a>
+        </div>
+    </div>
+    
+    </div>
+
+    <!-- Overlay  -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
